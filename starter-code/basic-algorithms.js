@@ -118,3 +118,19 @@ if (isPalindrome(prompt("give me a string"))) {
 }
 
 // Lorem ipsum generator
+
+var myString =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet justo tempor risus imperdiet mattis ac aliquam neque. Fusce vitae feugiat magna. Nunc pharetra facilisis orci vel sodales. Sed dictum semper orci. Proin velit arcu, mattis nec tortor sit amet, porta facilisis nibh. Aliquam iaculis, urna et accumsan rutrum, neque sapien dapibus turpis, eu pretium nisl ligula ut metus. Nulla non mauris placerat, rutrum elit a, porttitor nisi. Donec sed urna laoreet, blandit urna nec, tincidunt justo. Nam et odio sapien. Pellentesque porta ullamcorper nibh.";
+
+var wordCount = myString.split(" ");
+console.log(wordCount.length);
+
+var et = [];
+
+for (var i = 0; i < wordCount.length; i++) {
+  if (wordCount[i] === "et") {
+    et.push(wordCount[i]);
+  }
+}
+
+console.log(et.length);
